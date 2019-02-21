@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package>
+    <Dir>lib</Dir>
+    <Name>jarpm_maven</Name>
+    <Version>1.0.0</Version>
+    <Dependencies/>
+</Package>

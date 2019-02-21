@@ -1,0 +1,6 @@
+org/jarpm/cli/CLI.class
+org/jarpm/utils/file/Path.class
+org/jarpm/utils/data/XML.class
+org/jarpm/cli/commands/InitCommand.class
+org/jarpm/config/structs/Config.class
+org/jarpm/config/Writer.class
