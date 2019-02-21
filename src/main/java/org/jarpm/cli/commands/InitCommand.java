@@ -28,15 +28,15 @@ public class InitCommand implements Runnable {
 		
 		out.print("Dependency Directory [lib]: ");
 		dir = scanner.nextLine();
-		if (dir == "") dir = "lib";
+		if (dir.isEmpty()) dir = "lib";
 		
 		out.print("Package Name [" + currentDirName + "]: ");
 		pkg = scanner.nextLine();
-		if (pkg == "") pkg = currentDirName;
+		if (pkg.isEmpty()) pkg = currentDirName;
 		
 		out.print("Version [1.0.0]: ");
 		ver = scanner.nextLine();
-		if (ver == "") ver = "1.0.0";
+		if (ver.isEmpty()) ver = "1.0.0";
 	    
 	    mkCfg();
 	    mkLibDir(System.getProperty("user.dir") + File.separator + dir);
@@ -51,7 +51,7 @@ public class InitCommand implements Runnable {
 			conf.dependencies = new String[] {};
 			conf.packageName = pkg;
 			conf.version = ver;
-			Writer.writeNew(writePath, conf);
+			Writer.write(writePath, conf);
 			out.println("Successfully initialized config at " + writePath + ".");
 	    } catch(IOException e) {
 	        e.printStackTrace();
