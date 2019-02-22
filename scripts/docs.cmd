@@ -1,0 +1,1 @@
+javadoc -sourcepath src/main/java -d docs org.jarpm.config org.jarpm.utils.data org.jarpm.utils.file org.jarpm.config.structs
