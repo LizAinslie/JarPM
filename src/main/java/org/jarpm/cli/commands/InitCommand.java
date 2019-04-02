@@ -5,6 +5,7 @@ import static java.lang.System.out;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 import picocli.CommandLine.Command;
 
@@ -22,7 +23,7 @@ public class InitCommand implements Runnable {
     private Scanner scanner = new Scanner(System.in);
     
 	public void run() {
-	    String currentDirName = System.getProperty("user.dir").split(File.separator)[System.getProperty("user.dir").split(File.separator).length - 1];
+	    String currentDirName = System.getProperty("user.dir").split(Pattern.quote(File.separator))[System.getProperty("user.dir").split(Pattern.quote(File.separator)).length - 1];
 	    
 		out.println("Initializing new project in " + System.getProperty("user.dir") + "...");
 		
