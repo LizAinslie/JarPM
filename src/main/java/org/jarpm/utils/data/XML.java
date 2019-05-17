@@ -6,7 +6,7 @@ import javax.xml.bind.Marshaller;
 import java.io.StringWriter;
 
 /**
- * @author Landon Gravat
+ * @author RailRunner166
  */
 public class XML {
     /**

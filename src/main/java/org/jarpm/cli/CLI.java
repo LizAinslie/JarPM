@@ -6,6 +6,9 @@ import picocli.CommandLine;
 import picocli.CommandLine.HelpCommand;
 import picocli.CommandLine.Command;
 
+/**
+ * @author RailRunner166
+ */
 @Command(subcommands = {
 	HelpCommand.class,
 	InitCommand.class

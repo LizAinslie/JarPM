@@ -1,7 +1,7 @@
 package org.jarpm.utils.file;
 
 /**
- * @author Landon Gravat
+ * @author RailRunner166
  */
 public class Path {
     /**
